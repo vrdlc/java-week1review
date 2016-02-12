@@ -8,8 +8,17 @@ public class LetterReplace {
 
   }
 
-  public static String replaceLetter(String word) {
-    String a = word.replace('a', '-');
-    return word;
+  public static String willReplaceLetter(String word) {
+
+    String changedWord = "";
+    char[] splitWord = word.toCharArray();
+
+      for(Integer index = 0; index < splitWord.length; index++) {
+
+        if(splitWord[index] == 'a') {
+          changedWord += '-';
+        }
+      } return changedWord;
+
   }
 }
