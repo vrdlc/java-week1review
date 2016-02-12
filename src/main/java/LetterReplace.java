@@ -31,7 +31,7 @@ public class LetterReplace {
 
       for(Integer index = 0; index < splitWord.length; index++) {
 
-        if(splitWord[index] == 'a') {
+        if(splitWord[index] == 'a' || splitWord[index] == 'A') {
           changedWord += '-';
         } else if(splitWord[index] == 'e') {
           changedWord += '-';
