@@ -17,6 +17,18 @@ public class LetterReplace {
 
         if(splitWord[index] == 'a') {
           changedWord += '-';
+        } else if(splitWord[index] == 'e') {
+          changedWord += '-';
+        } else if(splitWord[index] == 'e') {
+          changedWord += '-';
+        } else if(splitWord[index] == 'i') {
+          changedWord += '-';
+        } else if(splitWord[index] == 'o') {
+          changedWord += '-';
+        } else if(splitWord[index] == 'u') {
+          changedWord += '-';
+        } else {
+          changedWord += splitWord[index];
         }
       } return changedWord;
 
