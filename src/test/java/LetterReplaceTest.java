@@ -15,4 +15,10 @@ public class LetterReplaceTest {
     LetterReplace replaceLetter = new LetterReplace();
     assertEquals("d-skt-p", replaceLetter.willReplaceLetter("desktop"));
   }
+
+  @Test
+  public void willReplaceLetter_allVowelsInPhrase_vowelsBecomeDashes() {
+    LetterReplace replaceLetter = new LetterReplace();
+    assertEquals("c-d- r-v--w", replaceLetter.willReplaceLetter("code review"));
+  }
 }
