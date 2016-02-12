@@ -15,9 +15,8 @@ public class LetterReplace {
 
     get("/results", (request, response) -> {
       HashMap model = new HashMap();
-      String changeWord = request.queryParams("changeWord");
-      String results = willReplaceLetter(changeWord);
-      model.put("changeWord", changeWord);
+      String inputWord = request.queryParams("inputWord");
+      String results = willReplaceLetter(inputWord);
       model.put("results", results);
       model.put("template", "templates/results.vtl");
       return new ModelAndView(model, "templates/layout.vtl");

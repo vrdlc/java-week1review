@@ -24,7 +24,7 @@ public class AppTest extends FluentTest {
   @Test
   public void willReplaceLetter() {
     goTo("http://localhost:4567");
-    fill("#changeWord").with("apple");
+    fill("#inputWord").with("apple");
     submit(".btn");
     assertThat(pageSource()).contains("-ppl-");
   }
