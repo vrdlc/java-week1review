@@ -33,15 +33,15 @@ public class LetterReplace {
 
         if(splitWord[index] == 'a' || splitWord[index] == 'A') {
           changedWord += '-';
-        } else if(splitWord[index] == 'e') {
+        } else if(splitWord[index] == 'e' || splitWord[index] == 'A') {
           changedWord += '-';
-        } else if(splitWord[index] == 'e') {
+        } else if(splitWord[index] == 'e' || splitWord[index] == 'E') {
           changedWord += '-';
-        } else if(splitWord[index] == 'i') {
+        } else if(splitWord[index] == 'i' || splitWord[index] == 'I') {
           changedWord += '-';
-        } else if(splitWord[index] == 'o') {
+        } else if(splitWord[index] == 'o' || splitWord[index] == 'O') {
           changedWord += '-';
-        } else if(splitWord[index] == 'u') {
+        } else if(splitWord[index] == 'u' || splitWord[index] == 'U') {
           changedWord += '-';
         } else {
           changedWord += splitWord[index];

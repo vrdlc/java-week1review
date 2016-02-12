@@ -25,6 +25,6 @@ public class LetterReplaceTest {
   @Test
   public void willReplaceLetter_allCapitalVowelsInPhrase_capitalVowelsBecomeDashes() {
     LetterReplace replaceLetter = new LetterReplace();
-    assertEquals("-pple --t -t --t -p", replaceLetter.willReplaceLetter("Apple Eat It Out Up"));
+    assertEquals("-ppl- --t -t --t -p", replaceLetter.willReplaceLetter("Apple Eat It Out Up"));
   }
 }
